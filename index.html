@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,63 +29,60 @@
     <script src="tailwind.config.js"></script>
   </head>
   <body class="bg-[#F3EBE4] font-sans">
-    <main class="grid md:flex md:flex-col justify-center h-dvh items-center">
+    <main class="grid items-center justify-center md:flex md:flex-col h-dvh">
       <section
-        class="product mx-6 md:mx-0 my-8 md:my-12 justify-center flex flex-col md:flex-row"
+        class="flex flex-col justify-center mx-6 my-8 product md:mx-0 md:my-12 md:flex-row h-1/2"
       >
-        <figure class="hidden md:block w-4/12 lg:w-3/12">
+        <figure
+          class="hidden w-4/12 md:block lg:w-fit md:size-fit lg:h-[480px] bg-white"
+        >
           <img
-            class="rounded-l-lg"
+            class="rounded-l-lg w-full md:h-[50dvh] lg:h-fit lg:w-[320px]"
             src="./images/image-product-desktop.jpg"
             alt="Product"
           />
         </figure>
-        <figure class="size-fit md:hidden">
+        <figure class="bg-white size-full md:hidden">
           <img
-            class="rounded-t-lg"
+            class="object-cover w-full rounded-t-lg"
             src="./images/image-product-mobile.jpg"
             alt="Product"
           />
         </figure>
         <article
-          class="p-8 flex flex-col gap-2 md:gap-0 md:justify-around bg-white rounded-b-lg md:rounded-r-lg w-fit md:w-4/12 lg:w-3/12"
+          class="flex flex-col gap-2 p-8 bg-white rounded-b-lg lg:gap-2 md:justify-around md:rounded-r-lg w-fit h-fit md:w-4/12 md:h-[50dvh] lg:w-3/12 lg:h-[480px]"
         >
           <small
-            class="text-xs whitespace-pre uppercase text-gray-700 md:text-base"
+            class="text-xs text-gray-700 uppercase whitespace-pre lg:text-base"
             >P e r f u m e</small
           >
           <header>
-            <h3 class="font-serif text-3xl md:text-5xl font-bold pb-2 md:p-0">
+            <h3
+              class="pb-2 font-serif font-bold md:text-3xl lg:text-4xl md:p-0"
+            >
               Gabrielle Essence Eau De Parfum
             </h3>
           </header>
           <p
-            class="pb-2 text-sm md:text-base tracking-wide text-gray-700 text-warp md:p-0"
+            class="pb-2 text-sm tracking-wide text-gray-700 lg:text-base lg:my-2 text-warp md:p-0"
           >
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
 
-          <span class="price flex items-center gap-4 text-green-700 w-full">
-            <b class="text-4xl md:text-5xl font-serif font-bold">$149.99</b>
-            <small class="line-through text-sm md:text-lg"> $169.99 </small>
+          <span
+            class="flex items-center w-full gap-4 text-green-700 lg:my-2 price"
+          >
+            <b class="font-serif text-3xl font-bold lg:text-5xl">$149.99</b>
+            <small class="text-sm line-through lg:text-base"> $169.99 </small>
           </span>
           <button
-            class="bg-green-700 hover:bg-green-600 active:bg-green-800 text-white p-4 w-full rounded-xl flex items-center justify-center gap-2 mt-2 md:mt-0 font-bold"
+            class="flex items-center justify-center w-full gap-2 p-4 mt-2 font-bold text-white bg-green-700 hover:bg-green-600 active:bg-green-800 rounded-xl md:mt-0"
           >
             <img src="./images/icon-cart.svg" alt="cart" /> Add to Cart
           </button>
         </article>
       </section>
-
-      <div class="attribution w-full text-center gap-1 p-4">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor.</a
-        >
-        Coded by
-        <a href="https://github.com/prasetyomuhdwi">prasetyomuhdwi.</a>
-      </div>
     </main>
   </body>
 </html>
